@@ -1,0 +1,314 @@
+    1  ls
+    2  pwd
+    3  ls
+    4  ifconfig
+    5  install net-tools
+    6  sudo install net-tools
+    7  install --help
+    8  sudo install net-tools
+    9  ifconfig
+   10  sudo apt install net-tools
+   11  sudo apt update
+   12  sudo apt upgrade
+   13  ls
+   14  pwd
+   15  mkdir workstation
+   16  ls
+   17  cd workstation
+   18  cd ..
+   19  ifconfig
+   20  ssh tanny@192.168.19.134
+   21  ssh tanya@192.168.19.135
+   22  clear
+   23  ls -la .ssh
+   24  cat known_host
+   25  cat .ssh/known_host
+   26  cd .ssh
+   27  cat known_host
+   28  ls
+   29  cd known_host
+   30  cd ..
+   31  ls
+   32  ls -la .ssh
+   33  ssh-keygen -t ed25519 -C "workstation key"
+   34  sudo apt install git
+   35  ls -la .ssh
+   36  cat .ssh/id_ed25519.pub
+   37  clear
+   38  ssh-copy-id -i ~/.ssh/id_ed25519.pub tanny@192.168.19.134
+   39  copy-ssh-id -i ~/.ssh/ed25519.pub tanya@192.168.19.135
+   40  ssh-copy-id -i ~/.ssh/ed25519.pub tanya@192.168.19.135
+   41  ssh-copy-id -i ~/.ssh/id_ed25519.pub tanya@192.168.19.135
+   42  clear
+   43  ssh tanny@192.168.19.134
+   44  ssh tanya@192.168.19.135
+   45  which git
+   46  sudo apt update
+   47  ls
+   48  git clone https://github.com/Kazuto-dev/AnsibleTraining.git
+   49  ls
+   50  cd AnsibleTraining
+   51  ls
+   52  cat inventory
+   53  cd ..
+   54  ls
+   55  ls -la .ssh
+   56  cat .ssh/id_ed25519
+   57  cat .ssh/id_ed25519.pub
+   58  ls
+   59  rmdir workstation
+   60  cd AnsibleTraining
+   61  git config --global user.name "Jandel Isidro"
+   62  git config --global user.email "isidrojandel@gmail.com"
+   63  nano README.md
+   64  cat README.md
+   65  git add .
+   66  git status
+   67  git commit -m "Using WSL on windows machine"
+   68  git status
+   69  git push origin main
+   70  history
+   71  clear -x
+   72  sudo apt update
+   73  sudo apt install ansible
+   74  ls
+   75  cd ..
+   76  ls
+   77  cd AnsibleTrainin
+   78  cd AnsibleTraining
+   79  ls
+   80  nano inventory
+   81  cat inventory
+   82  git status
+   83  git add .
+   84  git commit -m "adding one more IP"
+   85  git push origin main
+   86  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+   87  ls
+   88  nano inventory
+   89  cat inventory
+   90  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+   91  cd ..
+   92  cd ~/.ssh/ansible
+   93  ls -la .ssh
+   94  cd .ssh
+   95  pwd
+   96  ls
+   97  cd ..
+   98  ls
+   99  cd .ssh/ansible
+  100  ssh-keygen -t ed25519 -C "Atest"
+  101  ls -la .ssh
+  102  cd .ssh
+  103  ls
+  104  cat .ssh/ansible
+  105  cd ..
+  106  cat .ssh/ansible
+  107  cat known_hosts
+  108  ls -ld ~/.ssh
+  109  exit
+  110  pwd
+  111  ls -la .ssh
+  112  cat id_ed25519.pub
+  113  cat .ssh/id_ed25519
+  114  cat .ssh/id_ed25519.pub
+  115  ls
+  116  mv ansible .ssh
+  117  ls
+  118  mv ansible.pub .ssh
+  119  cd .ssh
+  120  ls
+  121  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  122  cd ..
+  123  ls
+  124  cd AnsibleTraining
+  125  ls
+  126  cat inventory
+  127  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  128  ls -la .ssh
+  129  cd ..
+  130  ls -la .ssh
+  131  cat .ssh/ansible
+  132  clear
+  133  sudo apt update
+  134  ls
+  135  cd AnsibleTraining
+  136  ls
+  137  cat inventory
+  138  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  139  cd ..
+  140  ssh tanny@192.168.19.134
+  141  ls -la .ssh
+  142  ssh -i ~/.ssh/ansible tanny@192.168.19.134
+  143  eval $(ssh-agent)
+  144  ps aux | grep 339
+  145  ssh-add
+  146  ssh tanny@192.168.19.134
+  147  ssh tanya@192.168.19.135
+  148  alias ssha='eval $(ssh-agent) && ssh-add'
+  149  ssha
+  150  nano .bashrc
+  151  ssh tanny@192.168.19.134
+  152  eval $(ssh-agent)
+  153  ps auc | grep 391
+  154  ps aux | grep 391
+  155  ssh-add
+  156  ssh tanny@192.168.19.134
+  157  alias ssha
+  158  ssha
+  159  nano .bashrc
+  160  alias ssha
+  161  ssha
+  162  ssh tanny@192.168.19.134
+  163  alias shaa
+  164  nano .bashrc
+  165  ssh tanny@192.168.19.134
+  166  ssh-add
+  167  ssh-agent
+  168  eval $(ssh-agent)
+  169  ps aux | grep 33
+  170  ssh-add
+  171  alias ssha='eval $(ssh-agent) && ssh-add'
+  172  ssha
+  173  ssh tanny@192.168.19.134
+  174  ssh tanya@192.168.19.135
+  175  sudo apt install ansible
+  176  ls
+  177  cd AnsibleTraining
+  178  ls
+  179  cat inventory
+  180  git status
+  181  git add .
+  182  git commit -m "adding username"
+  183  git push origin main
+  184  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  185  history
+  186  nano ansible.cfg
+  187  cat ansible.cfg
+  188  ls
+  189  ls /etc/ansible
+  190  ls
+  191  ansible al -m ping
+  192  ansible all -m ping
+  193  sudo wsl.exe --update
+  194  sudo apt wsl upgrade
+  195  sudo apt update
+  196  sudo apt upgrade
+  197  ssh tanny@192.168.19.134
+  198  alias ssha
+  199  ssha
+  200  ssh tanya@192.168.19.135
+  201  ssh tanny@192.168.19.134
+  202  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  203  ls
+  204  cd AnsibleTraining
+  205  ls
+  206  cat ansible.cfg
+  207  ansible all -m ping
+  208  ansible all --list-hosts
+  209  ansible all -m gather_facts
+  210  ansible all -m gather_facts --limit tanny@192.168.19.134
+  211  git status
+  212  git add .
+  213  git status
+  214  git commit -m "adding cfg"
+  215  git push origin main
+  216  sudo apt update
+  217  ansible all -m apt -a update_cache=true
+  218  ansible all -m apt update_cache-true --become --ask-become-pass
+  219  ansible all -m apt -a update_cache=true --become --ask-become-pass
+  220  ansible all -m apt -a update_cache=true --become
+  221  sudo -i
+  222  ansible all -m apt -a update_cache=true --become --ask-become-pass
+  223  ssh jandelisidro@192.168.19.134
+  224  cd ..
+  225  sudo apt install net-tools
+  226  ssh-copy-id -i ~/.ssh/ansible.pub jandelisidro@192.168.19.134
+  227  ssh-copy-id -i ~/.ssh/id_ed25519.pub jandelisidro@192.168.19.134
+  228  ssha
+  229  ssh jandelisidro@192.168.19.134
+  230  ansible all -m ping
+  231  cd
+  232  ls
+  233  cd AnsibleTraining
+  234  ansible all -m ping
+  235  ansible all -m apt -a name=vim-nox --become --ask-become-pass
+  236  ls -la .ssh
+  237  ssh jandelisidro@192.168.19.134
+  238  alias ssha='eval $(ssh-agent && ssh-add'
+  239  ssha
+  240  alias ssha='eval $(ssh-agent) && ssh-add'
+  241  ssha
+  242  ssh jandelisidro@192.168.19.134
+  243  ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass
+  244  ls
+  245  cd AnsibleTraining
+  246  ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass
+  247  history
+  248  pwd
+  249  history
+  250  clear
+  251  ssh jandelisidro@192.168.19.134
+  252  ssh tanya@192.168.19.135
+  253  alias ssha='eval $(ssh-agent) && ssh-add'
+  254  ssha
+  255  ssh jandelisidro@192.168.19.134
+  256  ls
+  257  cd AnsibleTraining
+  258  nano install_apache.yml
+  259  ansible-playbook --ask-become-pass install_apache.yml
+  260  ls
+  261  git status
+  262  git add .
+  263  git status
+  264  git commit -m "adding play book"
+  265  git push origin main
+  266  pwd
+  267  ls
+  268  nano instaa_apache.yml
+  269  cat installApache.yml
+  270  ls
+  271  cat install_apache.yml
+  272  rm instaall_apache.yml
+  273  rm install_apache.yml
+  274  ls
+  275  clear
+  276  ansible-playbook --ask-become-pass installApache.yml
+  277  cd ..
+  278  ifconfig
+  279  sudo apt update
+  280  sudo apt install apache2
+  281  sudo service apache2 start
+  282  ip addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+  283  nano installApache.yml
+  284  cd AnsibleTraining
+  285  ls
+  286  nano installApache.yml
+  287  ansible-playbook --ask-becoe-pass installApache.yml
+  288  ansible-playbook --ask-become-pass installApache.yml
+  289  nano installApache.yml
+  290  ansible-playbook --ask-become-pass installApache.yml
+  291  ssh tanny@192.158.19.134
+  292  ssh jandelisidro@192.168.19.134
+  293  ssh tanya@192.168.19.135
+  294  ls
+  295  cd AnsibleTraining
+  296  ls
+  297  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  298  alias ssha='eval $(ssh-agent) && ssh-add'
+  299  alias ssha
+  300  ssha
+  301  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  302  nano installApache.yml
+  303  ansible-playbook --ask-become-pass installApache.yml
+  304  ls
+  305  cp installApache.yml rmpackages.yml
+  306  ls
+  307  nano rmpackages.yml
+  308  git status
+  309  git add .
+  310  git commit -m "adding install package & removing script"
+  311  git push origin main
+  312  git status
+  313  clear
+  314  history
