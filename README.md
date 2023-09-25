@@ -1,31 +1,57 @@
-# Instructions for using ansible in linux via WSL 2 to Ubuntu
 
+# Setting Up Ansible for Linux via WSL 2 on Ubuntu
+*********************************************************
 
-1. Install for updates via “sudo apt install update”
-2. Install for upgrades via “sudo apt install upgrade”
-3. Install git “sudo apt install git”
-4. Install net-tools for typing “sudo apt install net-tools”
-5. Install ansible “sudo apt install ansible”
-6. Create Directory for Ansible “mkdir <folder name>”
-7. Check for IP address “ifconfig”
-8. To connect to other device remotely you need to type 
-“ssh <username>@<ip-address>”
-9. To check ssh connections type “ls -la .ssh”
-10. If you want to see the content inside “cat <filename.filetype>”
+*********************************************************
 
+*********************************************************
 
-# Preparing for automatically connection with passphrase
-   1. Create ssh key using ed25519 “ssh-keygen -t ed25519 -C <ssh keyname>”
-Give name to the ssh key
-Create your preferred paraphrase
-   2. Copy ssh to another machine using 
-“ssh-copy-id -i ~/.ssh/id_ed25519.pub <username>@<ip-address>”
-   3. Create repo on github and clone it locally to upload files from local to remote
-   4. Create an inventory file “touch inventory” and store the IPs of every server.
-  
-   5. To see the ssh key public type “cat .ssh/id_ed25519.pub”
-   6. To check the ping of every server
-“ansible all --key-file ~/.ssh/ansible -i inventory -m ping”
-   7. Add ssh-agent “eval $(ssh-agent)”
-   8. Add “ssh-add”
-   9. If you are lazy create an alias type “alias ssha='eval $(ssh-agent) && ssh-add' ”
+# Step 1: Update and Install Dependencies
+
+Update package information: Run sudo apt update.
+
+Upgrade packages (optional but recommended): Run sudo apt upgrade.
+
+Install Git: Run sudo apt install git.
+
+Install net-tools (for ifconfig): Run sudo apt install net-tools.
+
+Install Ansible: Run sudo apt install ansible.
+
+# Step 2: Prepare SSH for Remote Connections
+
+Create a directory for Ansible (replace <directory_name> with your preferred name): Run mkdir <directory_name>.
+
+Check your IP address: Run ifconfig.
+
+Connect to another device remotely via SSH: Run ssh <username>@<remote_ip>.
+
+List SSH connections: Run ls -la ~/.ssh.
+
+View the content of a file: Run cat <filename.filetype>.
+
+# Step 3: Prepare SSH Key for Automation
+
+Create an SSH key using ed25519 (provide a name and passphrase when prompted): Run ssh-keygen -t ed25519 -C "<comment>".
+
+Copy the SSH key to another machine for passwordless authentication: Run ssh-copy-id -i ~/.ssh/id_ed25519.pub <username>@<remote_ip>.
+
+# Step 4: Manage Ansible Inventory and Ping Servers
+
+Create a repository on GitHub and clone it locally for file management.
+
+Create an inventory file and store the IPs of every server: Run touch inventory.
+
+To view the SSH key's public part: Run cat ~/.ssh/id_ed25519.pub.
+
+Check the ping of every server using Ansible: Run ansible all --key-file ~/.ssh/id_ed25519 -i inventory -m ping.
+
+# Step 5: Manage SSH Agent (Optional)
+
+Add the SSH agent: Run eval $(ssh-agent).
+
+Add your SSH key to the agent (if not added automatically): Run ssh-add.
+
+Create an alias for convenience (optional): Run alias ssha='eval $(ssh-agent) && ssh-add'.
+
+These text-only instructions provide a clear a
